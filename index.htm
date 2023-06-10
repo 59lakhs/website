@@ -11,9 +11,6 @@
 		
 		<script rel="stylesheet" href="bootstrap-social.css"></script>
 		
-				<!--Google Fonts -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Iceland">
-		
   <!--tab icon for FF, Chrome, Opera -->
   <link rel="icon" type="image/png" href="icon.png" sizes="16x16">
   <link rel="icon" type="image/png" href="icon.png" sizes="32x32">
@@ -37,44 +34,41 @@
 <div class="main">
 
 
+
 <header>
-<div class="row">
+    <div class="row">
 	 
-   <div class="col-4 col-md-2 col-xl-1 b1">
-			<a href="music.htm"><img class="buttons" src="assets/music-bn.png"></a>
+   <div class="col-2 col-md-6 col-lg-7">
+	
    </div>
 			
-		<div class="col-4 col-md-2 col-xl-1 b2">
-				<a href="about.htm"><img class="buttons" src="assets/about-bn.png">	</a>
+		<div class="col-8 col-md-4 col-lg-3">
+			<br><br>
+				<img class="logo" src="assets/59lakhs-black.png">
   </div>
 		
-		<div class="col-4 col-md-2 b3 col-xl-1 ">
-	 <a href="shop.htm"><img class="buttons" src="assets/shop-bn.png"></a>
-  </div>
-		
-		<div class="col-12 col-md-6 col-xl-9">
-
+		<div class="col-2 col-md-2 col-lg-2">
+	 
    </div>
-</div>
+				</div>
 </header>
-
 	
-	<div class="row" id="contentt">
+	<div class="row buttons">
     
-		<div class="col-2 col-md-2"></div>
+		<div class="col-12 col-md-3" id="b1">
+			<a href="music.htm"><img class="button" src="assets/music-bn.png"></a>
+		</div>
 		
-		<div class="col-8 col-md-8">
-					<br>
-				<br><br>
-
-<p>
-COMING SOON</p>
-		<br><br>
-		<br><br>
-		
+		<div class="col-12 col-md-3" id="b2">
+			<a href="about.htm"><img class="button" src="assets/about-bn.png"></a>
 		</div>
 
-		<div class="col-2 col-md-2"></div>
+		
+		<div class="col-12 col-md-3" id="b3">
+			<a href="shop.htm"><img class="button" src="assets/shop-bn.png"></a>
+		</div>
+
+		<div class="col-12 col-md-3"></div>
 	
 	</div>
 	
@@ -85,11 +79,7 @@ COMING SOON</p>
 
 
 <div>
-	 		<img class="email" src="assets/59email.png">
-</div>
-
-<div>
-	 		<a href="https://59lakhs.com/"><img class="back" src="assets/59lakhs-black.png"></a>
+		<img class="email" src="assets/59email.png">
 </div>
 
 
@@ -97,16 +87,34 @@ COMING SOON</p>
 
 <style> 
 body {
-	background: url("assets/pages-bg.jpg");
-  background-size: 100%;
+	background: url("assets/59-bg.JPG");
+	 background-size: cover;
+		resize: both;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
 }
 
 header{
  position: fixed;
-
 	padding:7px;
  width: 100%;
+ color: white;
  text-align: center;
+	flex: 1;
+	z-index:2;
+}
+
+header a:hover{
+ position: fixed;
+ left: 0;
+ top: 0;
+		padding:7px;
+ width: 100%;
+ background: #f1f0f0;
+	opacity:0.7;
+ color: white;
+	 text-align: center;
 	flex: 1;
 	z-index:2;
 }
@@ -121,18 +129,12 @@ header{
 }
 
 .email{
-		text-align:left;
-		position:fixed;
-		top:15px;
-		right:15px;
-		width: 300px;
-		bottom:auto;
-		left:auto;
-		z-index: 4;
-}
-
-#contentt{
-padding-top:150px;
+			text-align:left;
+			position:fixed;
+  	left:15px;
+			bottom:15px;
+			width: 300px;
+  	z-index: 4;
 }
 
 .back{
@@ -143,7 +145,6 @@ padding-top:150px;
   	z-index: 4;
 			width:159px;
 }
-
 
 .credit{
     width: 7%;
@@ -156,29 +157,36 @@ padding-top:150px;
 .logo{
 		z-index:3;
 		flex: 1;
-		width: 50%;
+		width: 100%;
 }
 
 .buttons{
-	width:200px;
+
+	padding-left:70px;
+	text-align: center;
+	z-index:1;
 }
 
-.b1{
-
-	top: 17vh;
-	left:0px;
+.button{
+width:200px;
 }
 
-.b2{
+#b1{
 
-	top: 7px;
+	padding-top:25vh;
+	right:10px;
+}
+
+#b2{
+
+	padding-top:44vh;
 	right:30px;
 }
 
-.b3{
+#b3{
 
-	top: 5px;
-	left:7px;
+	padding-top:60vh;
+	padding-left:0px;
 }
 
 
@@ -192,13 +200,11 @@ padding-top:150px;
 
 
 p {
-  color: #BCB297;
-		background-color: rgb(43 43 43 / 0.59);
-		padding:25px;
-		text-align:center;
-		font-family: 'Iceland', serif;
-	font-size: 1.2rem;
+  color:black;
+		font-family: myFirstFont;
+	font-size: 1rem;
 }
+
 
 h1{
   color:black;
@@ -214,34 +220,46 @@ h3{
 
 
 
+a, a:link, a:visited, a:hover, a:active {
+  color: black;
+		text-decoration: none;
+}
+
+a:hover{color:red;text-decoration: none;}
+
+
+
 @media screen and (max-width: 766px ) {
-		header{position:relative; padding-bottom:0vh;}
-	.b2{top:auto; left:auto; right:auto;}
-	.b1{ top:50px; left:0px; right:100px;}
-	.b3{ top:50px; left:0px; right:100px;}
-	.buttons{position:static;	width:100%;}
-	.email{			text-align:left; position:fixed; left:15px; bottom:15px;
-			width: 300px; z-index: 4; top:auto; right:auto;}
-	#contentt{padding-top:0px;}
+		header{position:relative;}
+	.button{position:static;  margin:2%;}
+	.logo{width: 60%}
+	#b1, #b3{padding-top:10vh; right:80px; width:60%;}
+	#b2{padding-top:10vh; left:30px; width:60%;}
 	.box{position:static; width: 30%}
-	.p{padding:0px;}
+	.email{position:relative; display: block;
+    margin-left: auto;
+    margin-right: auto; left:auto; padding-top:20vh; padding-bottom:25vh;}
 	.foot{width:150px; position:relative; display: block;
     margin-left: auto;
-    margin-right: auto; left:auto;}
-	.back{width:120px;left:auto; right:0;bottom:7px;}
+    margin-right: auto; left:auto; padding-top:15vh;}
 }
+
 /* On phone screens, make these changes to size*/
 @media screen and ( max-width: 575px ) {
 	header{position:relative;}
-	.button{padding:0; position:static; text-align: center; width:35%; margin-left:5%;}
-	.logo{width:35%}
+	.button{position:static; text-align: center; margin-left:5%;}
+	.logo{width:100%}
 	.box{position:static; width: 40%}
+	.right-menu{bottom:0;  display: none; visibility: hidden;}
+	.left-menu{ z-index:1; display: none; visibility: hidden;}
 	h3{font-size: 3rem;}
 }
 
 @media screen and ( min-width: 576px ) {
 		.topnav {display:none;}
 }
+
+
 
 
 </style>
